@@ -16,7 +16,7 @@ Pinned to tag [`create-rust-app@0.1.0`](https://github.com/Create-Rust-App/creat
 
 ```bash
 brew tap Create-Rust-App/tap
-brew install create-rust-app
+brew install create-awesome-rust-app
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Browse templates and extensions: **[cra-templates](https://github.com/Create-Rus
 | Channel | How |
 |---------|-----|
 | GitHub Release | [linux amd64 binary](https://github.com/Create-Rust-App/create-rust-app/releases/tag/create-rust-app%400.1.0) |
-| AUR | `yay -S create-rust-app` |
+| AUR | `yay -S create-awesome-rust-app` |
 | Source | Build from [create-rust-app](https://github.com/Create-Rust-App/create-rust-app) |
 
 ## Automated updates

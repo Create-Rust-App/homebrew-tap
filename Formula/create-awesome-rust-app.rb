@@ -1,4 +1,4 @@
-class CreateRustApp < Formula
+class CreateAwesomeRustApp < Formula
   desc "Composable scaffolding CLI for production-ready Rust apps"
   homepage "https://github.com/Create-Rust-App/create-rust-app"
   url "https://github.com/Create-Rust-App/create-rust-app/archive/refs/tags/create-rust-app@0.1.0.tar.gz"
