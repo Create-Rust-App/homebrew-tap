@@ -49,7 +49,11 @@ jobs:
         run: |
           set -euo pipefail
           FORMULA_VER=$(grep -E 'version "' Formula/*.rb | head -1 | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+')
-          GH_TAG=$(curl -sfL https://api.github.com/repos/Create-Rust-App/create-rust-app/releases/latest | jq -r '.tag_name')
+          GH_TAG=$(curl -sL https://api.github.com/repos/Create-Rust-App/create-rust-app/releases/latest | jq -r '.tag_name // empty')
+          if [ -z "$GH_TAG" ]; then
+            echo "::notice::No GitHub releases yet — skipping drift check until the first CLI release."
+            exit 0
+          fi
           GH_VER=${GH_TAG#create-rust-app@}
           echo "Formula version: $FORMULA_VER"
           echo "GitHub latest tag: $GH_TAG (version $GH_VER)"
