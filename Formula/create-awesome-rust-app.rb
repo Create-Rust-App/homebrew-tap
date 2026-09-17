@@ -1,12 +1,9 @@
 class CreateAwesomeRustApp < Formula
   desc "Composable scaffolding CLI for production-ready Rust apps"
   homepage "https://github.com/Create-Rust-App/create-rust-app"
-  url "https://github.com/Create-Rust-App/create-rust-app/archive/refs/tags/create-rust-app@0.2.1.tar.gz"
-  version "0.2.1"
-  # Placeholder sha256: the CLI repo has no releases yet. The
-  # "Update formula" workflow resolves the real tarball sha256 from the
-  # GitHub Release and patches this value on the first release.
-  sha256 "48858ae6d71cf5ec43bc7ba53d251afe32c256118b4e3d56a8289043fe94e55c"
+  url "https://github.com/Create-Rust-App/create-rust-app/archive/refs/tags/create-rust-app@0.4.0.tar.gz"
+  version "0.4.0"
+  sha256 "2900eae986c37dadebf5a6d4ee2d649d1d8e43fa3ff5cc5a6f9932d3d7d0fae7"
   license "MIT"
 
   depends_on "rust" => :build
