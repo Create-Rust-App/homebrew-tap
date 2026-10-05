@@ -89,7 +89,7 @@ jobs:
             echo "Formula already at ${FORMULA_VERSION}; nothing to do"
             exit 0
           fi
-          if gh pr list --head "$BRANCH" --state open --json number --jq -e '.[0].number' >/dev/null; then
+          if gh pr list --head "$BRANCH" --state open --json number --jq 'length > 0' | grep -qx true; then
             echo "Update PR already open for ${FORMULA_VERSION}; nothing to do"
             exit 0
           fi
