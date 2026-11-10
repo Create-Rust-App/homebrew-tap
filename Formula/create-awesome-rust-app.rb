@@ -1,9 +1,9 @@
 class CreateAwesomeRustApp < Formula
   desc "Composable scaffolding CLI for production-ready Rust apps"
   homepage "https://github.com/Create-Rust-App/create-rust-app"
-  url "https://github.com/Create-Rust-App/create-rust-app/archive/refs/tags/create-rust-app@0.4.0.tar.gz"
-  version "0.4.0"
-  sha256 "2900eae986c37dadebf5a6d4ee2d649d1d8e43fa3ff5cc5a6f9932d3d7d0fae7"
+  url "https://github.com/Create-Rust-App/create-rust-app/archive/refs/tags/create-rust-app@0.4.2.tar.gz"
+  version "0.4.2"
+  sha256 "41a85c188b7323c7d368dbb5fad38fe87a3de5a3bd06be20ece268b90376e10e"
   license "MIT"
 
   depends_on "rust" => :build
